@@ -1,0 +1,38 @@
+
+
+body {
+  font-family: "ProximaNova", sans-serif;
+  font-size: 18px;
+  color: #222222;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+p > b {
+  font-weight: bold;
+}
+
+h2 {
+  
+  .purple-color {
+    color: #be2364;
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 30px;
+}
+
