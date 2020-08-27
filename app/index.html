@@ -14,11 +14,11 @@
   <!-- <script type="text/javascript">
     $jsonData = { "RU": { "currency": " \u0440\u0443\u0431.", "productsum": 1990, "oldproductsum": 2390, "delivery": 0, "totalsum": "1990р" } }</script> -->
     <link rel="stylecheet" href="css/proximanova.css">
-  <style>
+  <!-- <style>
     .ajax_loader {
       display: none;
     }
-  </style>
+  </style> -->
 
   <!-- LT code insertion -->
   <!-- /LT code insertion -->
@@ -1062,16 +1062,18 @@
         return false;
       });
 
-      $("#scroll-middle").click(function () { // ID откуда кливаем
+      $("#scroll-middle").click(function (event) { 
+        event.preventDefault();
         $('html, body').animate({
-          scrollTop: $(".form-middle").offset().top  // класс объекта к которому приезжаем
-        }, 1000); // Скорость прокрутки
+          scrollTop: $(".form-middle").offset().top  
+        }, 1000); 
       });
 
-      $("#scroll-footer").click(function () { // ID откуда кливаем
+      $("#scroll-footer").click(function (event) { 
+        event.preventDefault();
         $('html, body').animate({
-          scrollTop: $(".form-footer").offset().top  // класс объекта к которому приезжаем
-        }, 1000); // Скорость прокрутки
+          scrollTop: $(".form-footer").offset().top  
+        }, 1000); 
       });
 
     });
